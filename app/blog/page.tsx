@@ -32,32 +32,3 @@ const Page = async () => {
 };
 
 export default Page;
-
-/* const Blog = () => {
-  const files = fs.readdirSync("content/blogs");
-  const posts = files.map((fileName) => {
-    const slug = fileName.replace(".md", "");
-    const readFile = fs.readFileSync(`content/blogs/${fileName}`, "utf-8");
-    const { data: frontmatter } = matter(readFile);
-
-    return {
-      slug,
-      frontmatter,
-    };
-  });
-
-  return (
-    <div>
-      {posts?.map(({ slug, frontmatter }) => (
-        <div key={slug}>
-          <Link href={`/blog/${slug}`}>
-            <h2>{frontmatter.title}</h2>
-            <small>Published on {frontmatter.date}</small>
-          </Link>
-        </div>
-      ))}
-    </div>
-  );
-};
-
-export default Blog; */
