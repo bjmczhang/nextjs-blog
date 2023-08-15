@@ -4,7 +4,14 @@ interface PageParams {
   slug: string;
 }
 
-const getPageContent = async (slug: string) => {
+interface PageContent {
+  meta: {
+    title: string; // Assuming title is a string property
+  };
+  content: string; // Assuming content is a string
+}
+
+const getPageContent = async (slug: string): Promise<PageContent> => {
   const { meta, content } = await getPostBySlug(slug);
   return { meta, content };
 };
