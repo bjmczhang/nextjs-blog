@@ -8,10 +8,9 @@ export default function Home() {
       <h1 className="font-bold text-2xl mb-1">Benjamin Zhang</h1>
       <em>Future Full-Stack Developer</em>
       <p className="mt-6 text-zinc-800">
-        {" "}
-        Hey there! 👋 I'm Ben, a former designer who, after a few years of pixel
-        pushing, realized that coding is my true passion. I absolutely love
-        coding! You can read more about me here:{" "}
+        Hey there! 👋 I&#39;m Ben, a former designer who, after a few years of
+        pixel pushing, realized that coding is my true passion. I absolutely
+        love coding! You can read more about me here:
         <span>
           <Link
             href="/about"
