@@ -31,7 +31,14 @@
     "app/post",
     "app/blog",
     "app/404",
-    "app/about"
+    "app/about",
+    "app/layout.tsx",
+    "app/page.js",
+    "components/SelectedList.js",
+    "components/Footer.js",
+    "components/Header.js",
+    "components/News.js",
+    "assets/icons.js"
   ],
   "exclude": ["node_modules"]
 }
