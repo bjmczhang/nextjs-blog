@@ -1,16 +1,20 @@
 import { getPostBySlug } from "@/lib";
 
-const getPageContent = async (slug: any) => {
+interface PageParams {
+  slug: string;
+}
+
+const getPageContent = async (slug: string) => {
   const { meta, content } = await getPostBySlug(slug);
   return { meta, content };
 };
 
-export async function generateMetadata({ params: any }) {
+export async function generateMetadata({ params }: { params: PageParams }) {
   const { meta } = await getPageContent(params.slug);
   return { title: meta.title };
 }
 
-const Page = async ({ params: any }) => {
+const Page = async ({ params }: { params: PageParams }) => {
   const { content } = await getPageContent(params.slug);
 
   return (
