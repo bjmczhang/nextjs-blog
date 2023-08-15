@@ -1,0 +1,15 @@
+# Hello, Next.js!
+
+You can import and use React components in MDX files.
+
+```java
+<div className="prose prose-slate max-w-none mx-auto">
+  <div
+    dangerouslySetInnerHTML="{{"
+    __html:
+    md().render(content)
+    }}
+    className="w-full"
+  />
+</div>
+```
