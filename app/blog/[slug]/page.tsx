@@ -1,6 +1,6 @@
 import { getPostBySlug } from "@/lib";
 
-const getPageContent = async (slug) => {
+const getPageContent = async (slug: any) => {
   const { meta, content } = await getPostBySlug(slug);
   return { meta, content };
 };
